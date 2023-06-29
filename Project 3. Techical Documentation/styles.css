@@ -138,10 +138,10 @@ code {
 
 @media only screen and (max-width: 400px) {
   code {
-    margin-right: 2rem;
+    margin-right: 1.5rem;
   }
 
   #navbar {
-    max-width: 380px;
+    max-width: 390px;
   }
 }
