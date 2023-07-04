@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 
 * {
   font-family: "Lato", sans-serif;
@@ -11,6 +11,10 @@ body {
 }
 .logo {
   width: 60vw;
+}
+
+p {
+  font-weight: 400;
 }
 
 #header-img {
@@ -48,7 +52,7 @@ a {
   font-weight: 400;
   text-decoration: none;
   color: #000;
-  align-items: flex-end;
+  /* align-items: flex-end; */
 }
 
 li {
@@ -80,13 +84,10 @@ li {
   border: 0;
   background-color: #f1c40f;
   padding: 0 20px;
-
-  font-size: 1em;
   font-weight: 700;
+  font-size: 1em;
   text-transform: uppercase;
-
   border-radius: 2px;
-
   cursor: pointer;
 }
 
@@ -181,9 +182,7 @@ iframe {
   font-size: 1em;
   font-weight: 400;
   text-transform: uppercase;
-
   border-radius: 2px;
-
   cursor: pointer;
 }
 
@@ -263,7 +262,7 @@ footer > ul > li {
 
   .desc p {
     font-size: 0.9rem;
-    font-weight: lighter;
+    font-weight: 400;
   }
 
   #pricing {
@@ -274,7 +273,11 @@ footer > ul > li {
   }
 
   .product {
-    width: 70%;
+    width: 65%;
+  }
+
+  #hero h2 {
+    width: 90%;
   }
 
   footer ul {
