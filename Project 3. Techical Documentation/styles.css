@@ -108,9 +108,7 @@ code {
   }
 
   #navbar {
-    /* background-color: white; */
     position: absolute;
-
     top: 0;
     padding: 0;
     margin: 0;
@@ -139,6 +137,7 @@ code {
 @media only screen and (max-width: 400px) {
   code {
     margin-right: 1.5rem;
+    overflow: auto;
   }
 
   #navbar {
