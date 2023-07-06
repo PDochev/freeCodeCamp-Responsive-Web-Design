@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,200&family=Raleway:wght@300;400;700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  background-color: #be3144;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom: 2px solid black;
+}
+
+#navbar ul {
+  display: flex;
+  margin-right: 2rem;
+  height: 4.5rem;
+}
+
+#navbar ul a {
+  text-decoration: none;
+  color: #f0f0f0;
+  font-weight: 400;
+  font-size: 1.375rem;
+  text-align: center;
+  padding: 1.25rem;
+}
+
+#navbar ul a:hover {
+  background-color: #45557e;
+}
+
+#welcome-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+#welcome-section h1 {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 3.75rem;
+  color: #f0f0f0;
+}
+
+#welcome-section p {
+  color: #be3144;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 1.875rem;
+}
+
+#projects {
+  background-color: #45557d;
+  padding: 6.25rem 1.25rem;
+  width: 100%;
+  /* height: 100vh; */
+}
+
+#projects h1 {
+  text-align: center;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 2.625rem;
+  margin-bottom: 2rem;
+  color: #f0f0f0;
+}
+
+.project-flex {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+
+  object-fit: cover;
+}
+
+.project {
+  background-color: #313841;
+}
+
+.link {
+  padding: 1rem 0.5rem;
+  text-align: center;
+}
+
+.link a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.25rem;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+  background-color: #313841;
+}
+
+.contact-header {
+  font-family: Raleway, sans-serif;
+  font-size: 3.75rem;
+  font-weight: 700;
+  color: #f0f0f0;
+}
+
+.contact-p {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.125rem;
+  color: #f0f0f0;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin: 2rem auto;
+  color: white;
+}
+
+.fa-brands {
+  transition: transform 450ms;
+}
+.fa-brands:hover {
+  transform: translateY(10px);
+  transition: transform 450ms;
+}
+
+.icons a {
+  text-decoration: none;
+  margin: 0 0.5rem;
+  color: white;
+}
+
+footer {
+  background-color: #313841;
+  border-top: 4px solid #be3144;
+  font-weight: 400;
+  font-size: 1.125rem;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 3rem 0;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  #navbar {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    height: 5%;
+  }
+  #navbar ul a {
+    display: flex;
+    justify-content: center;
+    font-size: 0.6rem;
+    align-items: center;
+  }
+
+  #welcome-section h1 {
+    font-size: 1.8rem;
+  }
+  #welcome-section p {
+    font-size: 1rem;
+  }
+
+  .contact-header {
+    font-size: 2rem;
+  }
+  .contact-p {
+    font-size: 0.7rem;
+  }
+
+  .icons {
+    font-size: 0.7rem;
+  }
+
+  footer {
+    padding: 1rem 0;
+    font-size: 0.6rem;
+    border-top: 2px solid #be3144;
+    padding-left: 2rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  #projects h1 {
+    font-size: 1rem;
+    /* margin-top: -3rem; */
+    padding-top: 2rem;
+  }
+
+  #projects {
+    max-width: 320px;
+    padding: 0;
+    padding-bottom: 1rem;
+    /* margin-bottom: 1rem; */
+  }
+
+  .contact-header {
+    font-size: 1rem;
+  }
+  .contact-p {
+    font-size: 0.5rem;
+  }
+  .icons {
+    font-size: 0.5rem;
+  }
+  footer {
+    padding: 0.5rem 0;
+    font-size: 0.4rem;
+    border-top: 2px solid #be3144;
+    padding-left: 2rem;
+  }
+}
