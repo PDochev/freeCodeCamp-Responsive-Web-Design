@@ -186,6 +186,10 @@ iframe {
   cursor: pointer;
 }
 
+.btn:hover {
+  background-color: #ff8c03;
+}
+
 #submit:hover {
   background-color: #ff8c03;
 }
@@ -284,12 +288,14 @@ footer > ul > li {
     justify-content: center;
     align-items: center;
     margin-right: 0;
+    margin-left: 0;
   }
 
   footer span {
     justify-content: center;
     align-items: center;
     margin-right: 0;
+    margin-left: 0;
   }
 }
 
@@ -298,11 +304,13 @@ footer > ul > li {
     justify-content: center;
     align-items: center;
     margin-right: 0;
+    margin-left: 0;
   }
 
   footer span {
     justify-content: center;
     align-items: center;
     margin-right: 0;
+    margin-left: 0;
   }
 }

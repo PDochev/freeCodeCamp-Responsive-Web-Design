@@ -29,6 +29,7 @@ body {
   display: flex;
   margin-right: 2rem;
   height: 4.5rem;
+  /* margin: 0.1rem 0; */
 }
 
 #navbar ul a {
@@ -216,6 +217,10 @@ footer {
     border-top: 2px solid #be3144;
     padding-left: 2rem;
   }
+
+  #navbar ul a:hover {
+    background-color: transparent;
+  }
 }
 
 @media only screen and (max-width: 320px) {
@@ -246,5 +251,16 @@ footer {
     font-size: 0.4rem;
     border-top: 2px solid #be3144;
     padding-left: 2rem;
+  }
+
+  #navbar ul {
+    margin-right: 0;
+  }
+  #navbar ul a {
+    padding: 0.8rem;
+  }
+
+  #navbar ul a:hover {
+    background-color: transparent;
   }
 }
